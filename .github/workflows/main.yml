@@ -13,7 +13,7 @@ jobs:
         options: -v ${{ github.workspace }}:/github/workspace
     steps:
       - uses: actions/checkout@v2
-      - name: Flake8 Linter Step
+      - name: Flake8 Linter Step 
         uses: betrybe/flake8-linter-action@v*
         id: flake8_linter
         with:

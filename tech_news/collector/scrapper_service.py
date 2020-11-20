@@ -1,7 +1,5 @@
-import requests
+# flake8: noqa
 import parsel
-from requests.exceptions import HTTPError
-from os import path
 
 URL_BASE = "https://www.tecmundo.com.br/novidades"
 
@@ -36,10 +34,12 @@ headers = [
     {"name": "categories", "selector": CATEGORIES_SELECTOR}
 ]
 
+
 def get_urls(content):
     selector = parsel.Selector(content)
 
     return selector.css(URL_SELECTOR).getall()
+
 
 def get_news(content, url):
     selector = parsel.Selector(content)
@@ -52,9 +52,9 @@ def get_news(content, url):
             element_data = selector.css(element["selector"]).getall()
             if len(element_data) == 1 and field not in ['categories', 'sources']:
                 if field in ['shares_count', 'comments_count']:
-                   obj[field] = int(element_data[0])
-                else:  
-                   obj[field] = element_data[0]
+                    obj[field] = int(element_data[0])
+                else:
+                    obj[field] = element_data[0]
             elif len(element_data) == 0:
                 obj = {}
                 break

@@ -1,14 +1,13 @@
+# flake8: noqa
 import requests
-import parsel
-from requests.exceptions import HTTPError
 from tech_news.collector.scrapper_service import (
     get_urls,
     get_news
 )
-from time import sleep 
-from tech_news.database import insert_or_update
+from time import sleep
 
 URL_BASE = "https://www.tecmundo.com.br/novidades"
+
 
 def fetch_content(url, timeout=3, delay=0.5):
     try:
@@ -28,7 +27,7 @@ def scrape(fetcher=fetch_content, pages=1):
 
     while current_page <= pages:
         content_news = fetcher(URL_BASE + "?page=" + str(pages))
-        
+
         urls = get_urls(content_news)
 
         for url in urls:
@@ -36,6 +35,6 @@ def scrape(fetcher=fetch_content, pages=1):
             news = get_news(content_details, url)
             if news:
                 news_data.append(news)
-                
+
         current_page += 1
     return news_data

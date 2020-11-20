@@ -5,7 +5,7 @@ Você já usa o _GitHub_ diariamente para desenvolver os exercícios, certo? Ago
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
 
 ---
-rr
+rree
 ## Instruções para entregar seu projeto:
 
 ### ANTES DE COMEÇAR A DESENVOLVER:

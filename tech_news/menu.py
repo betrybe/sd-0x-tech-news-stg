@@ -1,4 +1,4 @@
-def collector_menu():
+def collector_menu(): 
     """Seu código deve vir aqui"""
 
 def analyzer_menu():

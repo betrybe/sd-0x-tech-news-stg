@@ -2,22 +2,22 @@
   "requirements": [
     {
       "identifier": "test_validar_fetch_com_sucesso",
-      "description": "requirement #1",
+      "description": "Será validado se a requisição fecth_content foi bem succedida",
       "bonus": false
     },
     {
       "identifier": "test_validar_fetch_com_tempo_maximo_maior_que_3",
-      "description": "requirement #1",
+      "description": "Será validado que uma requisição com tempo de resposta maior que 3 retorne uma string vazia",
       "bonus": false
     },
     {
       "identifier": "test_validar_fetch_com_status_diferente_de_200",
-      "description": "requirement #1",
+      "description": "Será validado que uma requisição diferente de 200 retorne string vazia",
       "bonus": true
     },
     {
       "identifier": "test_database",
-      "description": "requirement #2",
+      "description": "Validar se é possivel inserir dados no banco",
       "bonus": false
     }
   ]

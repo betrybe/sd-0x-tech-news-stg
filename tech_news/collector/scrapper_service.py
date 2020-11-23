@@ -40,7 +40,6 @@ def get_urls(content):
 
     return selector.css(URL_SELECTOR).getall()
 
-
 def get_news(content, url):
     selector = parsel.Selector(content)
 

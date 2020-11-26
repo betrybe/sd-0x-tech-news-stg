@@ -11,7 +11,7 @@ def test_validar_fetch_com_tempo_maximo_maior_que_3():
     assert "" == fetch_content('https://httpbin.org/delay/10')
 
 def test_validar_fetch_com_status_diferente_de_200():
-    assert "tt" == fetch_content('https://httpbin.org/status/404')
+    assert "" == fetch_content('https://httpbin.org/status/404')
 
 
 def test_database():
@@ -20,7 +20,7 @@ def test_database():
          'title': 'Após 2 acidentes fatais, Boeing 737 Max já pode voltar a voar',
          'timestamp': '2020-11-19T12:00:01',
          'writer': ' Nilton Kleina ',
-         'shares_count': 1,
+         'shares_count': 0,
          'comments_count': 0,
          'summary': '0',
          'sources': [' Anac ', ' Digital Trends '],

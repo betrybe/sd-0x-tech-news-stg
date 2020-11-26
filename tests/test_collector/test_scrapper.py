@@ -20,7 +20,7 @@ def test_database():
          'title': 'Após 2 acidentes fatais, Boeing 737 Max já pode voltar a voar',
          'timestamp': '2020-11-19T12:00:01',
          'writer': ' Nilton Kleina ',
-         'shares_count': 0,
+         'shares_count': 1,
          'comments_count': 0,
          'summary': '0',
          'sources': [' Anac ', ' Digital Trends '],

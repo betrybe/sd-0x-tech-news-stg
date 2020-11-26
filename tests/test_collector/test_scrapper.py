@@ -10,7 +10,7 @@ def test_validar_fetch_com_sucesso():
     assert 'content=\"Aprenda a programar com uma formação de alta qualidade e só comece a pagar quando conseguir um bom trabalho.\"' in fetch_content('https://app.betrybe.com/')
 
 def test_validar_fetch_com_tempo_maximo_maior_que_3():
-    assert "" == fetch_content('https://httpbin.org/delay/10')
+    assert "tt" == fetch_content('https://httpbin.org/delay/10')
 
 def test_validar_fetch_com_status_diferente_de_200():
     assert "" == fetch_content('https://httpbin.org/status/404')

@@ -11,7 +11,7 @@ def test_validar_fetch_com_tempo_maximo_maior_que_3():
     assert "" == fetch_content('https://httpbin.org/delay/10')
 
 def test_validar_fetch_com_status_diferente_de_200():
-    assert "" == fetch_content('https://httpbin.org/status/404')
+    assert "tt" == fetch_content('https://httpbin.org/status/404')
 
 
 def test_database():

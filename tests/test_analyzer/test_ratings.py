@@ -1,3 +1,5 @@
+from tech_news.analyzer.ratings import (top_5_news, top_5_categories)
+
 from pymongo import MongoClient
 # flake8: noqa
 

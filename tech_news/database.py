@@ -12,8 +12,3 @@ def insert_or_update(notice):
 
 def check_duplicates(news):
     """Seu código deve vir aqui"""
-
-def aggregate_news(query):
-    with MongoClient() as client:
-        db = client.tech_news
-        return list(db.news.aggregate(query))

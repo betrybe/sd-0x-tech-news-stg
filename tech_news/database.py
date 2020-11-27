@@ -3,7 +3,7 @@
 from pymongo import MongoClient
 from decouple import config
 
-client = MongoClient("mongodb://mongodb:27017/")
+client = MongoClient(host="mongodb", port=27017)
 db = client.tech_news
 
 

@@ -138,7 +138,7 @@ $ python3 -m pip install -r dev-requirements.txt
 ```
 
 O arquivo `dev-requirements.txt` contém todos as dependências que serão utilizadas no projeto, ele está agindo como se fosse um `package.json` de um projeto `Node.js`. Com as dependências já instaladas, para executar os testes basta usar o comando:
-
+ee
 ```bash
 $ python3 -m pytest
 ```

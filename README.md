@@ -3,9 +3,9 @@
 Você já usa o _GitHub_ diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
+ss
 ---
-
+rreerr
 ## Instruções para entregar seu projeto:
 
 ### ANTES DE COMEÇAR A DESENVOLVER:
@@ -138,20 +138,20 @@ $ python3 -m pip install -r dev-requirements.txt
 ```
 
 O arquivo `dev-requirements.txt` contém todos as dependências que serão utilizadas no projeto, ele está agindo como se fosse um `package.json` de um projeto `Node.js`. Com as dependências já instaladas, para executar os testes basta usar o comando:
-
+ee
 ```bash
 $ python3 -m pytest
 ```
-
+ee
 Se quiser saber mais sobre a instalação de dependências com `pip`, veja esse [artigo](https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1).
 
 Para verificar se você está seguindo o guia de estilo do Python corretamente, execute o comando:
-
+ss
 ```bash
 $ python3 -m flake8
 ```
 ---
-
+ss
 ## Dados
 
 ### Importação e exportação de CSV

@@ -146,7 +146,7 @@ ee
 Se quiser saber mais sobre a instalação de dependências com `pip`, veja esse [artigo](https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1).
 
 Para verificar se você está seguindo o guia de estilo do Python corretamente, execute o comando:
-
+ss
 ```bash
 $ python3 -m flake8
 ```

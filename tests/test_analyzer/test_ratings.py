@@ -5,8 +5,7 @@ from pymongo import MongoClient
 
 from decouple import config
 
-client = pymongo.MongoClient("mongodb://mongodb:27017/")
-
+client = MongoClient("mongodb://mongodb:27017/")
 db = client.tech_news
 
 NEW_NOTICE_1 = {'url': 'https://www.tecmundo.com.br/noticia_1.htm',

@@ -16,23 +16,16 @@ def check_duplicates(news):
     """Seu código deve vir aqui"""
 
 def create_news(data):
-    with MongoClient() as client:
-        db = client.tech_news
-
         db.news.insert_many(data)
 
 def find_news():
-    with MongoClient() as client:
-        db = client.tech_news
-
         return list(db.news.find({}, {'_id': False}))
 
 def search_news(query):
-    with MongoClient() as client:
-        db = client.tech_news
         return list(db.news.find(query))
 
 def aggregate_news(query):
-    with MongoClient() as client:
-        db = client.tech_news
+        return list(db.news.aggregate(query))
+
+def delete_many(query):
         return list(db.news.aggregate(query))

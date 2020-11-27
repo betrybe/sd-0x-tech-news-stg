@@ -1,5 +1,5 @@
 from tech_news.analyzer.ratings import (top_5_news, top_5_categories)
-from tech_news.singleton import remove
+
 
 from pymongo import MongoClient
 # flake8: noqa

@@ -89,3 +89,19 @@ def test_listar_as_top_cinco_noticias():
     db.news.insert_many([NEW_NOTICE_1, NEW_NOTICE_2, NEW_NOTICE_3,
                          NEW_NOTICE_4, NEW_NOTICE_5, NEW_NOTICE_6])
     assert top_5_news() == LIST_FIVE_NOTICES
+
+def test_buscar_top_noticias_retornar_vazio_caso_nao_exista_noticias():
+    db.news.delete_many({})
+    assert top_5_news() == []
+
+
+def test_listar_as_top_cinco_categorias():
+    db.news.delete_many({})
+    db.news.insert_many([NEW_NOTICE_1, NEW_NOTICE_2, NEW_NOTICE_3,
+                         NEW_NOTICE_4, NEW_NOTICE_5, NEW_NOTICE_6])
+    assert top_5_categories() == LIST_FIVE_CATEGORY
+
+
+def test_buscar_top_categorias_retornar_vazio_caso_nao_exista_noticias():
+    db.news.delete_many({})
+    assert top_5_categories() == []

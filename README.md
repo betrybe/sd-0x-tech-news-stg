@@ -151,7 +151,7 @@ Para verificar se você está seguindo o guia de estilo do Python corretamente, 
 $ python3 -m flake8
 ```
 ---
-
+ss
 ## Dados
 
 ### Importação e exportação de CSV

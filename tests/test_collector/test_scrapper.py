@@ -27,3 +27,5 @@ def test_database():
          'categories': [' Mobilidade Urbana/Smart Cities ',
                         ' Avião ',
                         ' Transporte ']}) is True
+    
+    

@@ -1,14 +1,12 @@
 from tech_news.analyzer.ratings import (top_5_news, top_5_categories)
+from tech_news.singleton import remove
 
 from pymongo import MongoClient
 # flake8: noqa
 
 from decouple import config
 
-DB_HOST = config("DB_HOST", default="localhost")
-DB_PORT = config("DB_PORT", default="27017")
-
-client = MongoClient(host=DB_HOST, port=int(DB_PORT), connect=False)
+client = pymongo.MongoClient("mongodb://mongodb:27017/")
 
 db = client.tech_news
 

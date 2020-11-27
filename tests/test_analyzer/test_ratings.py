@@ -92,7 +92,7 @@ def test_listar_as_top_cinco_noticias():
     db.news.insert_many([NEW_NOTICE_1, NEW_NOTICE_2, NEW_NOTICE_3,
                          NEW_NOTICE_4, NEW_NOTICE_5, NEW_NOTICE_6])
     assert top_5_news() == LIST_FIVE_NOTICES
-     db.news.delete_many({})
+    db.news.delete_many({})
 
 
 def test_buscar_top_noticias_retornar_vazio_caso_nao_exista_noticias():

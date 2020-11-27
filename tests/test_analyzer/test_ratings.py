@@ -8,7 +8,7 @@ from decouple import config
 DB_HOST = config("DB_HOST", default="localhost")
 DB_PORT = config("DB_PORT", default="27017")
 
-client = MongoClient(host=DB_HOST, port=int(DB_PORT), connect=False))
+client = MongoClient(host=DB_HOST, port=int(DB_PORT), connect=False)
 
 db = client.tech_news
 
@@ -89,24 +89,22 @@ LIST_FIVE_CATEGORY = ['Console_1', 'Console_2',
 
 
 def test_listar_as_top_cinco_noticias():
-    db.news.delete_many({})
     db.news.insert_many([NEW_NOTICE_1, NEW_NOTICE_2, NEW_NOTICE_3,
                          NEW_NOTICE_4, NEW_NOTICE_5, NEW_NOTICE_6])
     assert top_5_news() == LIST_FIVE_NOTICES
+     db.news.delete_many({})
 
 
 def test_buscar_top_noticias_retornar_vazio_caso_nao_exista_noticias():
-    db.news.delete_many({})
     assert top_5_news() == []
 
 
 def test_listar_as_top_cinco_categorias():
-    db.news.delete_many({})
     db.news.insert_many([NEW_NOTICE_1, NEW_NOTICE_2, NEW_NOTICE_3,
                          NEW_NOTICE_4, NEW_NOTICE_5, NEW_NOTICE_6])
     assert top_5_categories() == LIST_FIVE_CATEGORY
-
+    db.news.delete_many({})
 
 def test_buscar_top_categorias_retornar_vazio_caso_nao_exista_noticias():
-    db.news.delete_many({})
     assert top_5_categories() == []
+    db.news.delete_many({})
